@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ASF – Mobile Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <button class="icon-btn" aria-label="Menu">☰</button>
+    <div class="brand">
+      <span class="brand-badge">ASF</span>
+    </div>
+    <div class="r-icons">
+      <button class="icon-btn" title="Add">＋</button>
+      <button class="icon-btn" title="Favorites">♡</button>
+      <button class="icon-btn" title="Bag">🛍️</button>
+    </div>
+  </header>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <span class="search-ic">🔎</span>
+    <input id="searchInput" type="search" placeholder="Search for Casual Coords Women" />
+  </div>
+
+  <!-- Categories (Horizontal) -->
+  <nav class="cat-strip" id="catStrip">
+    <!-- Filled by JS -->
+  </nav>
+
+  <!-- Sections -->
+  <main>
+    <!-- HOME -->
+    <section id="home" class="page active">
+      <!-- Yellow Under 999 -->
+      <div class="promo-chip">UNDER ₹999 • GEN Z DRIP</div>
+
+      <!-- Coupon Banner -->
+      <div class="coupon">
+        <div>
+          <h3>Get 25% Off Up To ₹200 Off*</h3>
+          <p>On your first order | T&amp;C apply</p>
+        </div>
+        <div class="coupon-code">MYNTRASAVE</div>
+      </div>
+
+      <!-- Big Hero Banner -->
+      <div class="hero" id="heroWrap">
+        <!-- Filled by JS -->
+      </div>
+
+      <!-- Offers Row -->
+      <div class="offers-row" id="offersRow">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <!-- FWD -->
+    <section id="fwd" class="page">
+      <h3 class="section-title">fwd – Street & Gen Z Picks</h3>
+      <div class="grid" id="fwdGrid"></div>
+    </section>
+
+    <!-- BEAUTY -->
+    <section id="beauty" class="page">
+      <h3 class="section-title">Beauty – Top Deals</h3>
+      <div class="grid" id="beautyGrid"></div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="page">
+      <div class="profile-card">
+        <div class="avatar">A</div>
+        <h3>ASF Profile</h3>
+        <p>Welcome to Asf Clothes — your fashion hub.</p>
+        <div class="profile-actions">
+          <button class="btn">Sign In</button>
+          <button class="btn outline">Orders</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Nav -->
+  <nav class="bottom-nav">
+    <button class="bn-item active" data-goto="#home">🏠<span>Home</span></button>
+    <button class="bn-item" data-goto="#fwd">⚡<span>fwd</span></button>
+    <button class="bn-item" data-goto="#beauty">💄<span>Beauty</span></button>
+    <button class="bn-item" data-goto="#profile">👤<span>Profile</span></button>
+  </nav>
+
+  <!-- Details Modal -->
+  <div class="modal" id="detailModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" id="modalClose">✕</button>
+      <img id="mImg" alt="">
+      <h3 id="mTitle"></h3>
+      <p class="price" id="mPrice"></p>
+      <p class="desc" id="mDesc"></p>
+      <div class="actions">
+        <button class="btn primary" id="addCartBtn">Add to Cart</button>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
